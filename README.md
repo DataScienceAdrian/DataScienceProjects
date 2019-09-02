@@ -1,2 +1,2 @@
 # ProstateCancerSurvivalAnalysis
-Survival Analysis methods for ArrayExpress data connected with cancer disease.
+The work involved a review and discussion of various methods used in survival analysis (including Cox model, Kaplan-Meier estimator, random forests). R language packets for the analysis of genetic data were characterized and selected. An analysis of the survival of patients with prostate cancer for selected microarray data (ArrayExpress database, project: E-GEOD-10645) was performed together with a description of the results and final conclusions.
