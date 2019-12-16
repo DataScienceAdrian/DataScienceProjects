@@ -24,7 +24,7 @@ Wczytaj_ze_strony = function(){
   int_ostatnie_plus = int_ostatnie_plus[1,13:18]
   
   
-  
+  //Need to be changed
   dataLiczby = read.csv('D:/Programowanie/R_Projects/Lotto/liczby.csv',dec = ".",header = F,sep = ';')
   
   moje_liczby = as.integer(dataLiczby[1:6])
@@ -80,16 +80,16 @@ zapisz_do_pliku = function(Wczytaj_ze_strony){
 
 
 wyslij_maile = function(zapisz_do_pliku,Wczytaj_ze_strony){
-  sender <- "amarcinczyk95@gmail.com"
-  recipients <- "amarcinczyk95@gmail.com"
+  sender <- "test.email@gmail.com"
+  recipients <- "test.email@gmail.com"
   send.mail(from = sender,
             to = recipients,
             subject = "Ostatnie wyniki Lotto z Plusem",
             body = "Wyniki w zalaczniku",
             attach.files = c("Twoje_Wyniki.txt"),
             smtp = list(host.name = "smtp.gmail.com", port = 465, 
-                        user.name = "amarcinczyk95@gmail.com",            
-                        passwd = "28092004rm", ssl = TRUE),
+                        user.name = "test.email@gmail.com",            
+                        passwd = "password1234", ssl = TRUE),
             authenticate = TRUE,
             send = TRUE)
   
